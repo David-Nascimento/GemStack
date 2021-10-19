@@ -5,7 +5,7 @@ Funcionalidade: Cadastro de produtos
     Sendo um administrador de catálogo
     Posso cadastrar um novo produto
 
-    @auth @smoke
+    @auth 
     Cenario: Novo produto
 
         Dado que eu tenho o seguinte produto:
@@ -18,7 +18,7 @@ Funcionalidade: Cadastro de produtos
         Quando eu faço o cadastro desse item
         Entao devo ver este item na lista de produtos
 
-    @auth @doing
+    @auth @smoke
     Cenario: Duplicado
         O gestor de catálogo tenta cadastar um produto, porem o mesmo
         já foi cadastrado em outro momento, portanto o sistema
@@ -26,7 +26,7 @@ Funcionalidade: Cadastro de produtos
 
     Dado que eu tenho o seguinte produto:
         | nome        | categoria      | preco | descricao                | imagem          |
-        | Golden Axe  | Mega Drive     | 39.99 | Um Classico top demais!! | golden-axe.jpg |
+        | Golden Axe  | Mega Drive     | 39.99 | Um Classico top demais!! | golden-axe.jpg  |
     E os produtores são:
         | produtor  |
         | Sega      |
