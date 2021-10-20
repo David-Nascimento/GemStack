@@ -5,7 +5,7 @@ Funcionalidade: Exclusão de produtos
     Sendo um administrador de catálogo que possui um produto indesejado
     Posso remover o produto
 
-    @auth @doing
+    @auth 
     Cenario: Remover produto
 
         Dado que "mario_bros" é um produto indesejado
@@ -13,7 +13,7 @@ Funcionalidade: Exclusão de produtos
         E confirmo a solicitação
         Então não devo ver este item na lista
 
-    @auth
+    @auth @doing
     Cenario: Desistir a exclusão
 
         Dado que "streetf2" é um produto indesejado

@@ -1,5 +1,9 @@
-class ProductPage
-  include Capybara::DSL
+class ProductPage < BasePage
+  
+  #Construtor
+  def initialize
+    @product_list = 'table tbody tr'
+  end
 
   def go_to_form
     find('.product-add').click
@@ -31,12 +35,16 @@ class ProductPage
     find('.swal2-confirm').click
   end
 
-  def has_no_movie?(name)
-    return has_no_css?('table tbody tr', text: name)
+  def cancel_removal
+    find('.swal2-cancel').click
+  end
+
+  def has_no_product?(name)
+    return has_no_css?(@product_list, text: name)
   end
 
   def get_tr(value)
-    find('table tbody tr', text: value)
+    find(@product_list, text: value)
   end
 
   def alert
