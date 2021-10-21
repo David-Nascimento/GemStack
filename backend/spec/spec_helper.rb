@@ -1,5 +1,7 @@
 require "httparty"
 
+require_relative "services/product"
+require_relative "libs/db"
 
 RSpec.configure do |config|
 
