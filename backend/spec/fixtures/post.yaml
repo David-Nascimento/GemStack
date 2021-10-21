@@ -14,3 +14,11 @@ dup:
   price: 19.99 
   description: Outro Game muito Legal,
   cover: alex.jpg
+  
+no_title:
+  title: 
+  category: Master System
+  producers: [Sega] 
+  price: 19.99 
+  description: Outro Game muito Legal
+  cover: alex.jpg

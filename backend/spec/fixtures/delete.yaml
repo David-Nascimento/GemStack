@@ -1,0 +1,8 @@
+---
+mario:
+  title: Super Mario Bros 3
+  category: Nintendo
+  producers: [Nintendo]
+  price: 99.99
+  description: O classico da plataforma
+  cover: mario3.jpg

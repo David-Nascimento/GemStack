@@ -2,6 +2,7 @@ require "httparty"
 
 require_relative "services/product"
 require_relative "libs/db"
+require "faker"
 
 RSpec.configure do |config|
 

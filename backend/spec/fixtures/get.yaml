@@ -1,0 +1,27 @@
+---
+streetf2:
+  title: Street Fight II
+  category: Super Nintendo
+  producers: [Nintendo, Capcom]
+  price: 99.99
+  description: O classico de lutas.
+  cover: streetf2.jpg
+list:
+- title: Zelda
+  category: Nintendo
+  producers: [Nintendo]
+  price: 10.00
+  description: Outro game muito legal.
+  cover: zelda.jpg
+- title: Kid Chamaleon
+  category: Mega Drive
+  producers: [Sega]
+  price: 29.00
+  description: Destrus os inimigos e altera suas habilidades
+  cover: kid.jpg
+- title: Shinobi
+  category: Mega Drive
+  producers: [Sega]
+  price: 39.00
+  description: Aventuras do Ninja do Joapao feudal.
+  cover: shinobi.jpg

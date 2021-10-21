@@ -41,14 +41,7 @@ describe "POST /products" do
 
     context "Dado que o titulo nao existe" do
         before(:all) do
-            @payload = {
-                title: "",
-                category: "Master System",
-                producers: ["Sega"], 
-                price: "19.99", 
-                description: "Outro Game muito Legal",
-                cover: "alex.jpg"
-            }
+            @payload = @data["no_title"]
         end
         context "Quando faco o cadastro" do
             before(:all) do
