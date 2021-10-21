@@ -1,0 +1,16 @@
+---
+contra:
+  title: Contra
+  category: Super Nintendo
+  producers: [Nintendo, Konami] 
+  price: 299.99 
+  description: Um jogo foda de tiro
+  cover: contra.jpg
+
+dup:
+  title: Alex Kid
+  category: Master System
+  producers: ["Sega"] 
+  price: 19.99 
+  description: Outro Game muito Legal,
+  cover: alex.jpg
