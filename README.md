@@ -51,4 +51,4 @@ Para Executar os containers
 ```sh
 cd infra
 ```
-[Seguir Link]('https://github.com/David-Nascimento/GemStack/tree/main/infra')
+[Seguir Link](https://github.com/David-Nascimento/GemStack/tree/main/infra)
