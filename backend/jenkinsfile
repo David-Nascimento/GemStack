@@ -1,5 +1,5 @@
-pipeline{
-    agente any
+pipeline {
+    agent any
 
     stages {
         stage('Build') {
