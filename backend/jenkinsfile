@@ -18,7 +18,12 @@ pipeline {
             steps {
                 echo 'Executando tests'
                 sh 'cd backend && rspec -fd --format RspecJunitFormatter --out rspec.xml'
-                junit 'backend/rspec.xml'
+                
+            }
+            post {
+                always {
+                    junit 'backend/rspec.xml'
+                }
             }
         }
 
