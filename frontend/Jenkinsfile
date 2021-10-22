@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'ruby'
+            image 'papitoio/rubywd:latest'
             args '--network skynet'
         }
     }
@@ -17,12 +17,11 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Executando tests'
-                sh 'rspec -fd --format RspecJunitFormatter --out rspec.xml'
-                
+                sh 'cucumber -p ci'
             }
             post {
                 always {
-                    junit 'rspec.xml'
+                    cucumber customCssFiles: '', customJsFiles: '', failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', jsonReportDirectory: 'logs', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
                 }
             }
         }

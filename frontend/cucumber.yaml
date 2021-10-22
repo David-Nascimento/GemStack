@@ -1,4 +1,8 @@
 ---
-default: -p json -p pretty
+default: -p json -p pretty -p firefox
+ci: -p json -p pretty -p headless
 json: --format json --out=logs/report.json
 pretty: --format pretty
+chrome: BROWSER=chrome
+headless: BROWSER=headless
+firefox: BROWSER=firefox
