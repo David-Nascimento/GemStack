@@ -1,5 +1,5 @@
-class LoginPage < BasePage
-
+class LoginPage 
+  include Capybara::DSL
   def go
     visit 'http://pixel-web:3000/login'
   end

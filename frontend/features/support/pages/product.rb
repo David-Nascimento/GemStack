@@ -1,5 +1,5 @@
-class ProductPage < BasePage
-  
+class ProductPage
+  include Capybara::DSL
   #Construtor
   def initialize
     @product_list = 'table tbody tr'

@@ -7,6 +7,7 @@ Quando('eu submeto minhas credenciais {string} e {string}') do |_email, _passwor
 end
 
 Então('devo ser autenticado') do
+  sleep 5
   expect(@side.logged_user).to eql 'David'
 end
 

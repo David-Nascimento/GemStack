@@ -1,4 +1,5 @@
 require "report_builder"
+require_relative 'helper.rb'
 
 Before do
   page.current_window.resize_to(1520, 1080)
@@ -14,10 +15,12 @@ Before("@auth") do
 end
 
 After do |scenario|
-  # O capybara tira o screenshot
-  screenshot = page.save_screenshot("logs/screenshot/#{scenario.__id__}.png")
-  # O Cucumber anexa o screenshot no relatório para gerar evidência!
-  embed(screenshot, "image/png", "Screenshot")
+  @helper = Helper.new
+  @nome = scenario.name.gsub(/([_@#!%()\-=;><,{}\~\[\]\.\/\?\"\*\^\$\+\-]+)/, '')
+    @helper.take_screenshot(@nome, 'logs/screenshots/test_failed') if   scenario.failed?
+      unless @helper.take_screenshot(@nome, 'logs/screenshots/test_passed')
+    end
+
 end
     
 at_exit do

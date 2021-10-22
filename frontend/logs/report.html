@@ -60,23 +60,14 @@
 
     
         
-            <div class="chip"><i class="material-icons rotate-45">label</i>@auth</div>
-        
-            <div class="chip"><i class="material-icons rotate-45">label</i>@doing</div>
+            <div class="chip"><i class="material-icons rotate-45">label</i>@login</div>
         
     
 
-    <h5>Desistir a exclusão (9.742s)</h5>
-    features/specs/produtos/exclusao.feature:17
+    <h5>Acessar o portal (10.481s)</h5>
+    features/specs/login/login.feature:12
 
     
-        
-            
-
-
-
-
-
         
             
 
@@ -106,7 +97,7 @@
           <li class="collection-item step passed">
   
 
-  <b>Dado </b> que &quot;streetf2&quot; é um produto indesejado (2.611s)
+  <b>Dado </b> que acesso à página principal (2.063s)
 
   
 
@@ -128,7 +119,7 @@
           <li class="collection-item step passed">
   
 
-  <b>Quando </b> eu solicito a exclusão desse item (1.145s)
+  <b>Quando </b> eu submeto minhas credenciais &quot;david@ninjapixel.com&quot; e &quot;pwd123&quot; (1.173s)
 
   
 
@@ -147,32 +138,10 @@
 </li>
 
       
-          <li class="collection-item step undefined">
+          <li class="collection-item step passed">
   
 
-  <b>Mas </b> eu cancelo a solicitação (0.000s)
-
-  
-
-  
-
-  
-  
-  
-
-
-
-
-
-
-  
-</li>
-
-      
-          <li class="collection-item step undefined">
-  
-
-  <b>Então </b> este item deve permancer na lista (0.000s)
+  <b>Então </b> devo ser autenticado (5.090s)
 
   
 
@@ -197,12 +166,6 @@
         
             
 
-
-    
-    
-    
-    <pre>undefined method `embed&#39; for #&lt;Object:0x0000000005b9b018&gt; (NoMethodError)
-./features/support/hooks.rb:20:in `After&#39;</pre>
 
 
 
@@ -259,7 +222,7 @@
   <div class="col m4 s12">
     <table id="metaData" class="bordered">
       <tbody>
-      <tr><th>Total Time</th><td>9.742s</td></tr>
+      <tr><th>Total Time</th><td>10.481s</td></tr>
       
       </tbody>
     </table>
@@ -272,17 +235,17 @@
           <ul class="featureList collapsible popout" data-collapsible="expandable">
   
       
-      <li class="feature incomplete">
+      <li class="feature working">
   <div class="collapsible-header indigo lighten-1 waves-effect waves-light">
     <i class="material-icons">featured_play_list</i>
-    <b>Funcionalidade</b>&nbsp;Exclusão de produtos&nbsp;(9.742s)
+    <b>Funcionalidade</b>&nbsp;Login&nbsp;(10.481s)
   </div>
 
   <div class="collapsible-body indigo lighten-4">
     <div class="collection scenarioList indigo">
       
-        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text undefined" href="#g0f0s0">
-          <b>Cenario</b> Desistir a exclusão&nbsp;(9.742s)
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s0">
+          <b>Cenario</b> Acessar o portal&nbsp;(10.481s)
         </a>
       
     </div>
@@ -313,34 +276,30 @@
   
       
           
-          <tr class="undefined">
+          <tr class="passed">
             <td class="hide-on-small-only">
-  Exclusão de produtos
+  Login
 </td>
 
 <td class="hoverable modal-trigger white-text" data-target="g0f0s0">
-  Desistir a exclusão
+  Acessar o portal
 </td>
 
 <td class="hide">
   
       
-          @auth. 
-      
-          @doing. 
+          @login. 
       
   
 </td>
 
 <td class="uppercase">
-  undefined
+  passed
 </td>
 
 
 
 <td class="hide-on-small-only">
-  
-      undefined method `embed&#39; for #&lt;Object:0x0000000005b9b018&gt; (NoMethodError)
   
 </td>
 
@@ -354,29 +313,6 @@
 
         <div id="errors" class="col s12 indigo lighten-5">
           <ul class="errorList collapsible popout" data-collapsible="expandable">
-  
-      <li class="error">
-  <div class="collapsible-header red lighten-2 white-text waves-effect waves-light">
-    <i class="material-icons">bug_report</i>undefined method `embed&#39; for #&lt;Object:0x0000000005b9b018&gt; (NoMethodError)
-  </div>
-
-  <div class="collapsible-body indigo lighten-4">
-    <div class="collection failedScenarioList">
-      
-          
-              
-                  
-                      <a class="collection-item failedScenario indigo lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s0">
-                        <i class="material-icons">highlight_off</i>&nbsp;Desistir a exclusão
-                      </a>
-                  
-              
-          
-      
-    </div>
-  </div>
-</li>
-
   
 </ul>
 
