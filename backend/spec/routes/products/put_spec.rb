@@ -17,7 +17,7 @@ describe "PUT /products/:id" do
 
             it "entao deve retornar 204" do
                 resp = @product.updated(@product_id)
-                expect(resp.code).to eql 200
+                expect(resp.code).to eql 204
             end
         end
     end

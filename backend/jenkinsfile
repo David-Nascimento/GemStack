@@ -30,6 +30,7 @@ pipeline {
         stage('UAT') {
             steps {
                 echo 'Teste de aceitacao'
+                input message: 'Podemos ir para producao?'
             }
         }
 
