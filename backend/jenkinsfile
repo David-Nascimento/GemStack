@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps{
                 echo "Compilando e/ou baixando dependencias"
-                sh 'pwd'
+                sh 'cd backend'
                 sh 'bundle install'
             }
         }
