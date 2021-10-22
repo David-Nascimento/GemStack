@@ -16,7 +16,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Executando tests'
-                sh 'rspec -fd'
+                sh 'cd backend && rspec -fd'
             }
         }
 
