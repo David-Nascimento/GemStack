@@ -1,0 +1,32 @@
+pipeline{
+    agente any
+
+    stages {
+        stage('Build') {
+            steps{
+                echo "Compilando e/ou baixando dependencias"
+                sh 'bundle install'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Executando tests'
+                sh 'rspec -fd'
+            }
+        }
+
+        stage('UAT') {
+            steps {
+                echo 'Teste de aceitacao'
+            }
+        }
+
+        stage('Prod') {
+            steps {
+                echo 'App pronto para producao!'
+            }
+        }
+        
+    }
+}
