@@ -2,6 +2,7 @@ pipeline {
     agent {
         docker {
             image 'ruby'
+            args '--network skynet'
         }
     }
 
