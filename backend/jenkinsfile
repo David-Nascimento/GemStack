@@ -17,7 +17,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Executando tests'
-                sh 'cd backend && rspec -fd'
+                sh 'cd backend && rspec -fd --format RspecJunitFormatter --out rspec.xml'
+                junit 'rspec.xml'
             }
         }
 
