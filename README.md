@@ -1,5 +1,13 @@
 <div align="center"><img src="https://miro.medium.com/max/6250/1*aU3XxiIixsi5N5MctgrAwg.png" title="QaFullStack" alt="QaFullStack" width="250" height="150" />
 
+
+# Projeto GemStack
+O projeto GemStack é uma iniciativa que visa aprimorar a qualidade e eficiência do desenvolvimento de software utilizando Ruby como linguagem de programação, juntamente com os frameworks Cucumber e Capybara para teste de aceitação e integração contínua com Jenkins.
+
+Com o uso dessas ferramentas, o GemStack permite uma abordagem mais colaborativa e eficiente no processo de desenvolvimento de software, permitindo uma rápida identificação de problemas e bugs, garantindo assim uma entrega de software mais confiável e de alta qualidade.
+
+Em suma, o projeto GemStack é uma solução poderosa e completa que possibilita um desenvolvimento ágil, colaborativo e com testes automatizados, proporcionando um ambiente mais seguro e produtivo para a equipe de desenvolvimento de software.
+
 ![GitHub](https://img.shields.io/github/license/asilvadev/QA-automacao-RockLov?style=flat-square)
 ![Made](https://img.shields.io/badge/Made_with-Coffee-red?logo=coffeescript&style=flat-square)
 <br/>
